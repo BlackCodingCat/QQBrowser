@@ -8,5 +8,30 @@ module.exports = {
     },
     devServer:{
         contentBase:'./dist'
-    }
+    },
+    module:{
+        rules:[
+            {
+                test:/\.css$/,
+                use:[
+                    {loader:"style-loader"},
+                    {loader:"css-loader"}
+                ]
+            },
+            {
+                test:/\.(png|jpg|gif)$/,
+                use:[
+                    {
+                        loader:'file-loader',
+                        query:{
+                            name:'img/[name]-[hash:5].[ext]'
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    plugins:{},
+    mode:'development',
+    resolve:{}
 }
