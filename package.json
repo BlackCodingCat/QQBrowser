@@ -1,0 +1,31 @@
+{
+  "name": "qqbrowser",
+  "version": "1.0.0",
+  "description": "QQ浏览器滚滚屏",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackCodingCat/QQBrowser.git"
+  },
+  "keywords": [
+    "css3+FullPage"
+  ],
+  "author": "敲代码的小黑猫",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlackCodingCat/QQBrowser/issues"
+  },
+  "homepage": "https://github.com/BlackCodingCat/QQBrowser#readme",
+  "dependencies": {
+    "fullpage.js": "^3.0.4",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
