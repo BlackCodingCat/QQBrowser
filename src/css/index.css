@@ -35,7 +35,7 @@ body{
 }
 
 #sectionFour{
-    background: url('./../img/page4_glow.png') no-repeat center 200px,linear-gradient(
+    background: url('./../img/page4_glow.png') no-repeat center 300px,linear-gradient(
         0deg,#ff9f42 0%,#ed923d 35%, #6d3816 75%,#2e0b04 100%
     );
     position: relative;
@@ -432,5 +432,145 @@ footer ul li a span{
     }
     100%{
         transform: rotateX(70deg) rotateY(360deg) rotateZ(10deg);
+    }
+}
+
+/* 第四屏 */
+#sectionFour header{
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    box-sizing: content-box;
+    padding: 5px 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#sectionFour header img{
+    vertical-align: middle;
+    margin-right: 60px;
+}
+#sectionFour header button{
+    width: 90px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid#fff;
+    cursor: pointer;
+    vertical-align: middle;
+}
+#sectionFour header button:hover{
+    color: #000000;
+    background-color: #fff;
+}
+#sectionFour article .sectionFourLines{
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    border-top: 1px solid#fff;
+    border-bottom: 1px solid#fff;
+}
+#sectionFour article .sectionFourLines img:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 10%;
+    margin-top: -62px;
+    animation: sectionFourLineImg 1.5s infinite linear;
+}
+#sectionFour article .sectionFourLines img:nth-child(2){
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    margin-top: 54px;
+    animation: sectionFourLineImg 1s infinite linear;
+}
+#sectionFour article .sectionFour-main,#sectionFour article .sectionFour-main ul{
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-left: -450px;
+    margin-top: -300px;
+    transform-style: preserve-3d;
+}
+#sectionFour article .sectionFour-main ul{
+    transform: rotateX(-55deg);
+}
+#sectionFour article .sectionFour-main ul li{
+    width: 414px;
+    height: 414px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -207px;
+    margin-left: -207px;
+}
+#sectionFour article .sectionFour-main ul li:nth-child(3){
+    margin-top: -10px;
+}
+#sectionFour article .sectionFour-main ul li:nth-child(4){
+    transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2) rotateX(-5deg)
+}
+#sectionFour article .sectionFour-main ul li:nth-child(1) img{
+    animation: sectionFourRound 60s infinite linear;
+}
+#sectionFour article .sectionFour-main ul li:nth-child(2) img{
+    animation: sectionFourRound 10s infinite linear;
+}
+#sectionFour article .sectionFour-main ul li:nth-child(3) img{
+    animation: sectionFourRound 10s infinite linear;
+}
+#sectionFour article .sectionFour-main ul li:nth-child(4) img{
+    animation: sectionFourRound 3s infinite linear;
+}
+#sectionFour article .sectionFour-main ul li:nth-child(5) img{
+    animation: sectionFourRound 2s infinite linear;
+}
+
+#sectionFour article .sectionFour-title{
+    width: 300px;
+    height: 71px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -145px;
+    margin-left: 210px;
+    transform: rotateX(40deg) scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+}
+#sectionFour article .sectionFour-tag{
+    width: 250px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -460px;
+    margin-top: 47px;
+}
+#sectionFour article .sectionFour-tag p{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+@keyframes sectionFourLineImg{
+    0%{
+        transform: translateX(-2000px);
+    }
+    100%{
+        transform: translateX(2000px);
+    }
+}
+@keyframes sectionFourRound{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
     }
 }
