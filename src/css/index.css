@@ -574,3 +574,150 @@ footer ul li a span{
         transform: rotateZ(360deg);
     }
 }
+/* 第五屏 */
+#sectionFive header{
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    box-sizing: content-box;
+    padding: 5px 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#sectionFive header img{
+    vertical-align: middle;
+    margin-right: 60px;
+}
+#sectionFive header button{
+    width: 90px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid#fff;
+    cursor: pointer;
+    vertical-align: middle;
+}
+#sectionFive header button:hover{
+    color: #000000;
+    background-color: #fff;
+}
+#sectionFive .sectionFive-main,#sectionFive .sectionFive-main ul{
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -470px;
+    margin-top: -340px;
+    /* background-color: red; */
+}
+#sectionFive .sectionFive-main ul li:nth-child(1){
+    width: 305px;
+    height: 305px;
+    border-radius: 50%;
+    background: url('./../img/page5_bubble_glow.png') no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -102px;
+    margin-left: -102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sectionFive .sectionFive-main ul li:nth-child(2){
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: url('./../img/page5_bubble.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -240px;
+    margin-top: -180px;
+}
+#sectionFive .sectionFive-main ul li:nth-child(3){
+    width:250px;
+    height: 250px;
+    background: url('./../img/page5_bubble.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -270px;
+    margin-top: 120px;
+}
+#sectionFive .sectionFive-main ul li:nth-child(4){
+    width: 180px;
+    height: 180px;
+    background: url('./../img/page5_bubble.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 220px;
+    margin-top: 100px;
+}
+#sectionFive .sectionFive-main ul li:nth-child(5){
+    width: 120px;
+    height: 120px;
+    background: url('./../img/page5_bubble.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 220px;
+    margin-top: -150px;
+}
+#sectionFive .sectionFive-main ul li:nth-child(6){
+    width: 90px;
+    height: 90px;
+    background: url('./../img/page5_bubble.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 320px;
+    margin-top: -100px;
+}
+#sectionFive .sectionFive-tag{
+    width: 250px;
+    height: 55px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -430px;
+    margin-top: -20px;
+}
+#sectionFive .sectionFive-title{
+    width: 410px;
+    height: 121px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: 150px;
+}
