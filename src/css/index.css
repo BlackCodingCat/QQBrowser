@@ -14,6 +14,7 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 #sectionTwo{
@@ -23,6 +24,7 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 #sectionThree{
@@ -32,6 +34,7 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 #sectionFour{
@@ -41,6 +44,7 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 #sectionFive{
@@ -50,6 +54,7 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 
@@ -192,6 +197,11 @@ footer ul li a span{
 }
 
 /* 第二屏 */
+
+#sectionTwo.current .sectionTwo-main,
+#sectionTwo.current .sectionTwo-title{
+    transform: scaleX(5) scaleY(5) scaleZ(5);
+}
 /* 头部 */
 #sectionTwo header{
     width: 300px;
@@ -263,6 +273,8 @@ footer ul li a span{
     top:50%;
     margin-left: -450px;
     margin-top: -300px;
+    /* 过渡效果 */
+    transition: all 1.5s linear;
 }
 #sectionTwo article .sectionTwo-main ul li{
     width: 350px;
@@ -297,6 +309,8 @@ footer ul li a span{
     top: 50%;
     margin-left: -650px;
     margin-top: -43px;
+    /* 过渡效果 */
+    transition: all 1.5s linear;
 }
 #sectionTwo article .sectionTwo-title p{
    color: #fff;
@@ -314,6 +328,10 @@ footer ul li a span{
 }
 
 /* 第三屏 */
+#sectionThree.current .sectionThree-title,
+#sectionThree.current .sectionThree-main{
+    transform: rotateZ(70deg) scaleX(5) scaleY(5) scaleZ(5);
+}
 /* 头部 */
 #sectionThree header{
     width: 300px;
@@ -372,6 +390,8 @@ footer ul li a span{
     margin-left: 141px;
     margin-top: -175px;
     transform: rotateY(-18deg);
+    /* 过渡效果 */
+    transition: all 1.2s linear;
 }
 #sectionThree .sectionThree-main,
 #sectionThree .sectionThree-main ul{
@@ -382,6 +402,8 @@ footer ul li a span{
     left: 50%;
     margin-left: -450px;
     margin-top: -300px;
+    /* 过渡效果 */
+    transition: all 1.2s linear;
 }
 #sectionThree .sectionThree-main ul{
     transform-style: preserve-3d;
@@ -436,6 +458,12 @@ footer ul li a span{
 }
 
 /* 第四屏 */
+#sectionFour.current .sectionFour-main,
+#sectionFour.current .sectionFour-title,
+#sectionFour.current .sectionFour-tag{
+    transform: scaleX(5) scaleY(5) scaleZ(5);
+}
+
 #sectionFour header{
     width: 300px;
     height: 100px;
@@ -498,6 +526,8 @@ footer ul li a span{
     margin-left: -450px;
     margin-top: -300px;
     transform-style: preserve-3d;
+    /* 过渡效果 */
+    transition: all 1.5s linear;
 }
 #sectionFour article .sectionFour-main ul{
     transform: rotateX(-55deg);
@@ -542,6 +572,8 @@ footer ul li a span{
     margin-top: -145px;
     margin-left: 210px;
     transform: rotateX(40deg) scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+     /* 过渡效果 */
+    transition: all 1.5s linear;
 }
 #sectionFour article .sectionFour-tag{
     width: 250px;
@@ -551,6 +583,8 @@ footer ul li a span{
     left: 50%;
     margin-left: -460px;
     margin-top: 47px;
+     /* 过渡效果 */
+    transition: all 1.5s linear;
 }
 #sectionFour article .sectionFour-tag p{
     color: #fff;
@@ -575,6 +609,13 @@ footer ul li a span{
     }
 }
 /* 第五屏 */
+#sectionFive.current .sectionFive-main,
+#sectionFive.current .sectionFive-title,
+#sectionFive.current .sectionFive-tag{
+    transform: rotateY(-90deg) scaleX(3.5) scaleY(3.5) scaleZ(3.5);
+    transform-origin: 100% 100%;
+}
+
 #sectionFive header{
     width: 300px;
     height: 100px;
@@ -613,7 +654,8 @@ footer ul li a span{
     left: 50%;
     margin-left: -470px;
     margin-top: -340px;
-    /* background-color: red; */
+    /* 过渡效果 */
+    transition: all 1.2s linear;
 }
 #sectionFive .sectionFive-main ul li:nth-child(1){
     width: 305px;
@@ -711,6 +753,8 @@ footer ul li a span{
     left: 50%;
     margin-left: -430px;
     margin-top: -20px;
+    /* 过渡效果 */
+    transition: all 1.2s linear;
 }
 #sectionFive .sectionFive-title{
     width: 410px;
@@ -720,4 +764,6 @@ footer ul li a span{
     left: 50%;
     margin-top: -100px;
     margin-left: 150px;
+    /* 过渡效果 */
+    transition: all 1.2s linear;
 }
