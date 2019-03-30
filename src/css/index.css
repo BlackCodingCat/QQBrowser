@@ -1,32 +1,52 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
 #sectionOne{
     background: url('./../img/page1_glow.png') no-repeat center 20px ,linear-gradient(
         0deg,#3953cb 0%,#3657be 35%,#242161 75%,#1a0531 100%
     );
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 #sectionTwo{
     background:linear-gradient(
         0deg,#41b93e 0%,#3b9e3c 35%,#274535 75%,#190530 100%
-    )
+    );
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 #sectionThree{
     background: linear-gradient(
         0deg,#395ecb 0%,#3657be 35%,#242161 75%,#1a0531 100%
-    )
+    );
+    width: 100%;
+    height: 100%;
 }
 
 #sectionFour{
     background: url('./../img/page4_glow.png') no-repeat center 200px,linear-gradient(
         0deg,#ff9f42 0%,#ed923d 35%, #6d3816 75%,#2e0b04 100%
-    )
+    );
+    width: 100%;
+    height: 100%;
 }
 
 #sectionFive{
     background: url('./../img/page5_glow.png') no-repeat center -300px,linear-gradient(
         0deg,#d74d53 0%,#c44655 35%, #4c184c 75%,#110145 100%
-    )
+    );
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -99,7 +119,6 @@
 #sectionOne .sectionOne-main ul li:nth-child(5){
     transform: translateZ(-60px) rotateY(180deg);
 }   
-
 #sectionOne .sectionOne-circle{
     width: 680px;
     height: 680px;
@@ -115,7 +134,8 @@
     width: 100%;
 }
 
-#sectionOne footer{
+/* 尾部 */
+footer{
     width: 100%;
     height: 60px;
     line-height: 60px;
@@ -126,27 +146,27 @@
     box-sizing: border-box;
     padding: 0 20px;
 }
-#sectionOne footer>span{
+footer>span{
     float: left;
     font-size: 16px;
     color: #fff;
     font-weight: bold;
     letter-spacing: 1px;
 }
-#sectionOne footer ul{
+footer ul{
     float: right;
     overflow: hidden;
 }
-#sectionOne footer ul li{
+footer ul li{
     float: left;
 }
-#sectionOne footer ul li a{
+footer ul li a{
     text-decoration: none;
     font-size: 16px;
     color: #fff;
     font-weight: bold;
 }
-#sectionOne footer ul li a span{
+footer ul li a span{
     margin: 0 10px;
 }
 
@@ -166,4 +186,126 @@
     100%{
         transform:rotateX(70deg) rotateY(-10deg) rotateZ(360deg) scale(1.8) 
     } 
+}
+
+/* 第二屏 */
+/* 头部 */
+#sectionTwo header{
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    box-sizing: content-box;
+    padding: 5px 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#sectionTwo header img{
+    vertical-align: middle;
+    margin-right: 60px;
+}
+#sectionTwo header button{
+    width: 90px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid#fff;
+    cursor: pointer;
+    vertical-align: middle;
+}
+#sectionTwo header button:hover{
+    color: #000000;
+    background-color: #fff;
+}
+/* 主体部分 */
+#sectionTwo article .sectionTwoBg{
+    perspective: 1000px;
+}
+#sectionTwo article .sectionTwoBg span{
+    width: 5000px;
+    height: 1px;
+    background-color: #c7e00e;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -2500px;
+}
+#sectionTwo article .sectionTwoBg img:nth-of-type(1){
+    width: 684px;
+    height: 395px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -142px;
+    margin-top: -197px;
+}
+#sectionTwo article .sectionTwoBg img:nth-of-type(2){
+    width: 346px;
+    height: 123px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -62px;
+    margin-left: -60px;
+}
+#sectionTwo article .sectionTwo-main,
+#sectionTwo article .sectionTwo-main ul{
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -450px;
+    margin-top: -300px;
+}
+#sectionTwo article .sectionTwo-main ul li{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -175px;
+    margin-top: -175px;
+}
+#sectionTwo article .sectionTwo-main ul li:nth-child(1){
+    left: 70%;
+    animation: sectionTwoRound 0.5s infinite linear;
+}
+#sectionTwo article .sectionTwo-main ul li:nth-child(2){
+    left: 60%;
+    animation: sectionTwoRound 1s infinite linear
+}
+#sectionTwo article .sectionTwo-main ul li:nth-child(3){
+    left: 50%;
+    animation: sectionTwoRound 2s infinite linear
+}
+#sectionTwo article .sectionTwo-main ul li:nth-child(4){
+    left: 40%;
+    animation: sectionTwoRound 3s infinite linear
+}
+#sectionTwo article .sectionTwo-title{
+    width: 360px;
+    height: 160px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -650px;
+    margin-top: -43px;
+}
+#sectionTwo article .sectionTwo-title p{
+   color: #fff;
+   font-size: 18px;
+   line-height: 30px; 
+}
+
+@keyframes sectionTwoRound{
+    0%{
+        transform: rotateZ(0deg)
+    }
+    100%{
+        transform: rotateZ(360deg)
+    }
 }
